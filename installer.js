@@ -21,7 +21,7 @@ var generateTempScript = () => {
         if(__[0]!=null){$alert("installed '"+__.map(_ => {return _.name}).join(",")+"'.</br>open /b/ drive to access the new package.")}}, 50)`;
 };
 
-fetch(`https://cdn.jsdelivr.net/gh/raymonable/brewdom-w93@${window.bdbranch || "latest"}/boot.js`)
+fetch(`https://cdn.jsdelivr.net/gh/raymonable/brewdom-w93@${window.bdbranch || "main"}/boot.js`)
     .then(_ => _.text())
     .then(bootScript => {
         localStorage["boot/brewdom.js"] = bootScript;
