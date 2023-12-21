@@ -13,7 +13,7 @@ if(!window.homebrew)window.homebrew=[];window.homebrew.push(
     {
         name: "PACKAGE NAME", // package name
         event: () => {
-            // package name
+            // package init (probably shouldn't put your entire package into here though)
         },
         quick: true, // use this if it's something like a popup window or something. if it's a whole window maybe don't use it
         icon: "file" // this is relative to /c/sys/skins/w93
