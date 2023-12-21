@@ -3,6 +3,8 @@
 ### a windows93 package activation system
 simplify package creation and focus on what matters more
 
+![YEAH!!! brewdom](https://github.com/raymonable/brewdom-w93/assets/101374892/2a8a5cbf-08a2-4c31-95f0-e6600c11f252)
+
 ## usage
 
 when brewdom is installed, you can use the file explorer and access /b/ to open brewdom.</br>
