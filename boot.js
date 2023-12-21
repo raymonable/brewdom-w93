@@ -4,7 +4,7 @@ brewdom
 a windows93 v2 homebrew launcher
 
 written by raymond @ 12/20/23 
-v1.0.0
+v1.0.1
 
 */
 
@@ -36,8 +36,8 @@ le._apps["b"].exec = () => {
         n.style.display = "none";
 
         var e = w.el.body.querySelector(".ui_explorer");
-        if (homebrew != null)
-            homebrew.forEach(item => {
+        if (window.homebrew != null)
+            window.homebrew.forEach(item => {
                 if (item.name != null && item.event != null) {
                     var i = document.createElement("div");
                     i.classList = "ui_icon ui_icon__file";
