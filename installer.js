@@ -26,4 +26,5 @@ fetch("https://cdn.jsdelivr.net/gh/raymonable/brewdom-w93@latest/boot.js")
     .then(bootScript => {
         localStorage["boot/brewdom.js"] = bootScript;
         generateTempScript();
+        location.reload();
     })
