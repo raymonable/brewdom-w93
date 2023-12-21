@@ -4,7 +4,7 @@ brewdom installer
 this works standalone too i think
 
 written by raymond @ 12/20/23
-v1.0.0
+v1.0.1
 
 */
 
@@ -17,7 +17,7 @@ var generateTempScript = () => {
     localStorage["boot/brewdom-tmp.js"] = 
         `localStorage.removeItem("boot/brewdom-tmp.js");$explorer.refresh();var _=[${current.join(",")}];
         setTimeout(() => {
-        var __;if(window.homebrew!=null){__ = window.homebrew.filter(item => {return !_.includes(item.name)})};
+        var __=[];if(window.homebrew!=null){__ = window.homebrew.filter(item => {return !_.includes(item.name)})};
         if(__[0]!=null){$alert("installed '"+__.map(_ => {return _.name}).join(",")+"'.</br>open /b/ drive to access the new package.")}}, 50)`;
 };
 
