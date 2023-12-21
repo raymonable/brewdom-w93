@@ -24,11 +24,18 @@ if(!window.homebrew)window.homebrew=[];window.homebrew.push(
 ```
 
 brewdom can also work in your installer.</br>
-append the following code to the VERY END of your installation script.</br>
-your boot files MUST be put into the /a/boot folder before the brewdom installer is run
+append the following code to the *very end* of your installation script.</br>
+your boot files **must** be put into the /a/boot folder before the brewdom installer is run or it will malfunction.
 
 ```js
 fetch("https://cdn.jsdelivr.net/gh/raymonable/brewdom-w93@"+(window.bdbranch || "main")+"/installer.js")
     .then(_ => _.text())
     .then(_ => eval(_));
 ```
+
+if you use brewdom it's very, **very** recommended that it's mentioned in the README.</br>
+also, feel free to put a GitHub Issue in this repository and we can add your package to the honorable mentions.
+
+## packages using brewdom
+
+[wallpaper-brewdom](https://github.com/raymonable/wallpaper-brewdom/tree/main) by raymond (me)
