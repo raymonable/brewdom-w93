@@ -28,7 +28,7 @@ append the following code to the VERY END of your installation script.</br>
 your boot files MUST be put into the /a/boot folder before the brewdom installer is run
 
 ```js
-fetch("https://cdn.jsdelivr.net/gh/raymonable/brewdom-w93/installer.js")
+fetch("https://cdn.jsdelivr.net/gh/raymonable/brewdom-w93@"+(window.bdbranch || "latest")+"/installer.js")
     .then(_ => _.text())
     .then(_ => eval(_));
 ```
